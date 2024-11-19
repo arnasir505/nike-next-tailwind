@@ -1,4 +1,4 @@
-import Nav from './(components)/Nav';
+import Nav from './_components/Nav';
 import {
   Hero,
   PopularProducts,
@@ -8,7 +8,7 @@ import {
   CustomerReviews,
   Subscribe,
   Footer,
-} from './(sections)';
+} from './_sections';
 
 const App = () => (
   <main className='relative'>
