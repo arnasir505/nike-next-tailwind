@@ -6,7 +6,7 @@ import { navLinks } from '../_constants';
 
 const Nav = () => {
   return (
-    <header className='padding-x py-8 absolute z-10'>
+    <header className='padding-x py-8 absolute z-10 w-full'>
       <nav className='flex justify-between items-center max-container'>
         <Link href='/'>
           <Image src={headerLogo} alt='Nike logo' width={130} height={29} />
@@ -18,11 +18,14 @@ const Nav = () => {
                 href={item.href}
                 className='font-montserrat leading-normal text-lg text-slate-gray'
               >
-                {item.label}sdf
+                {item.label}
               </Link>
             </li>
           ))}
         </ul>
+        <div className='hidden max-lg:block'>
+          <Image src={hamburger} width={25} height={25} alt='hamburger' />
+        </div>
       </nav>
     </header>
   );
